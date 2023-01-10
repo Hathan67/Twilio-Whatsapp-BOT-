@@ -9,8 +9,8 @@ from sqlalchemy.orm import Session
 from sqlalchemy import exc, func
 
 
-account_sid = 'ACe6db9c8721eb76dcd5e677f362653d98'
-auth_token = 'd500e731a614d788d5c321168b6e1717'
+account_sid = 'YOUR TWILIO SID'
+auth_token = 'YOUR TWILIO TOKEN'
 client = Client(account_sid, auth_token)
 
 ho=client.messages.create(from_="whatsapp:+14155238886", body='- give *OrderID* to show orders.\n\t- type *orderstatus* to show status\n\t- type *ALL* to show all orders\n\t- type *Invoice* to get PDF', to="whatsapp:+919941571104")
